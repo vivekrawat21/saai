@@ -7,8 +7,8 @@ export default function RemoveBackground() {
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleRemoveBackground = async () => {
-    const apiKey = process.env.NEXT_PUBLIC_REMOVEBG_API_KEY;
-    const apiUrl = process.env.NEXT_PUBLIC_REMOVEBG_API_URL;
+    const apiKey = process.env.NEXT_PUBLIC_REMOVEBG_API_KEY!;
+    const apiUrl = process.env.NEXT_PUBLIC_REMOVEBG_API_URL!;
 
     if (!image) return;
 

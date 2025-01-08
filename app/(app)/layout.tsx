@@ -25,7 +25,9 @@ const sidebarItems = [
   { href: "/summarizer", icon: TextIcon, label: "Article Summarizer" },
 ];
 
-export default function AppLayout({ children }) {
+import { ReactNode } from "react";
+
+export default function AppLayout({ children }: { children: ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();

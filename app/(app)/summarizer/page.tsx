@@ -22,10 +22,10 @@ export default function ArticleSummarizer() {
         )}&lang=en&engine=2`,
         {
           method: "GET",
-          headers: {
-            "x-rapidapi-key": process.env.NEXT_PUBLIC_RAPIDAPI_KEY,
-            "x-rapidapi-host": process.env.NEXT_PUBLIC_RAPIDAPI_HOST,
-          },
+          headers: new Headers({
+            "x-rapidapi-key": process.env.NEXT_PUBLIC_RAPIDAPI_KEY || "",
+            "x-rapidapi-host": process.env.NEXT_PUBLIC_RAPIDAPI_HOST || "",
+          }),
         }
       );
 

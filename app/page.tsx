@@ -1,4 +1,3 @@
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { FaCheckCircle } from "react-icons/fa";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
