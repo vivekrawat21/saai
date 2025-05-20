@@ -1,0 +1,51 @@
+import {
+    ImageIcon,
+    Wand2Icon,
+    ImageDownIcon,
+    ZoomInIcon,
+    SparklesIcon,
+    BrushIcon,
+    HighlighterIcon,
+    TextIcon,
+    PenLineIcon,
+    FileCode2Icon,
+    UploadIcon,
+    VideoOffIcon,
+    VideoIcon,
+  } from "lucide-react";
+  
+  export const sidebarSections = [
+    {
+      label: "Image Tools",
+      icon: ImageIcon,
+      items: [
+        { href: "/background-remove", icon: Wand2Icon, label: "Background Remover" },
+        { href: "/image-compressor", icon: ImageDownIcon, label: "Image Compressor" },
+        { href: "/social-share", icon: ZoomInIcon, label: "Image Enhancer" },
+        { href: "/image-generator", icon: SparklesIcon, label: "AI Image Generator" },
+        { href: "/cartoonify", icon: BrushIcon, label: "Cartoonify" },
+        { href: "/watermark-remover", icon: HighlighterIcon, label: "Watermark Remover" },
+      ],
+    },
+    {
+      label: "Text Tools",
+      icon: TextIcon,
+      items: [
+        { href: "/summarizer", icon: TextIcon, label: "Article Summarizer" },
+        { href: "/content-generator", icon: PenLineIcon, label: "AI Content Generator" },
+        { href: "/grammer-corrector", icon: HighlighterIcon, label: "Grammar Corrector" },
+        { href: "/code-explainer", icon: FileCode2Icon, label: "Code Explainer" },
+      ],
+    },
+    {
+      label: "Video Tools",
+      icon: UploadIcon,
+      items: [
+        { href: "/video-upload", icon: UploadIcon, label: "Video Compressor" },
+        { href: "videobg-remover", icon: VideoOffIcon, label: "Video Background Remover" },
+        { href: "video-summarizer", icon: VideoIcon, label: "AI Video Summarization" },
+        { href: "enhancer", icon: ZoomInIcon, label: "Frame Enhancer" },
+      ],
+    },
+  ];
+  

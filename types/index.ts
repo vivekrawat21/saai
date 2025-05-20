@@ -1,4 +1,5 @@
 export interface Video {
+    url: string
     id: string
     title: string
     description: string

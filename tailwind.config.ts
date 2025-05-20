@@ -28,6 +28,9 @@ export default {
         "dark-text": "#e0e0e0",
         "light-text": "#f5f5f5",
       },
+        backdropBlur: {
+          lg: '16px',
+        }
     },
   },
   plugins: [daisyui],

@@ -11,9 +11,12 @@ dayjs.extend(relativeTime);
 interface VideoCardProps {
   video: Video;
   onDownload: (url: string, title: string) => void;
+  className?: string;
+  style?: React.CSSProperties;
+  url?: string;
 }
 
-const VideoCard: React.FC<VideoCardProps> = ({ video, onDownload }) => {
+const VideoCard: React.FC<VideoCardProps> = ({ video, onDownload,className,style }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [previewError, setPreviewError] = useState(false);
 
@@ -72,7 +75,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video, onDownload }) => {
 
   return (
     <div
-      className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300"
+      className={`card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 ${className}  ${style}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
