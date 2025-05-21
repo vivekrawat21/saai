@@ -41,7 +41,7 @@ import {
       items: [
         { href: "/video-upload", icon: UploadIcon, label: "Video Compressor" },
         { href: "/videobg-remover", icon: VideoOffIcon, label: "Video Background Remover" },
-        { href: "/video-summarizer", icon: VideoIcon, label: "AI Video Summarization" },
+        { href: "/ytvideo-summarizer", icon: VideoIcon, label: "YT Video Summarizer" },
         { href: "/enhancer", icon: ZoomInIcon, label: "Frame Enhancer" },
       ],
     },
