@@ -4,7 +4,6 @@ import {
     ImageDownIcon,
     ZoomInIcon,
     SparklesIcon,
-    BrushIcon,
     HighlighterIcon,
     TextIcon,
     PenLineIcon,
@@ -23,8 +22,7 @@ import {
         { href: "/image-compressor", icon: ImageDownIcon, label: "Image Compressor" },
         { href: "/social-share", icon: ZoomInIcon, label: "Image Enhancer" },
         { href: "/image-generator", icon: SparklesIcon, label: "AI Image Generator" },
-        { href: "/cartoonify", icon: BrushIcon, label: "Cartoonify" },
-        { href: "/watermark-remover", icon: HighlighterIcon, label: "Watermark Remover" },
+        { href: "/object-remover", icon: HighlighterIcon, label: "Object Remover" },
       ],
     },
     {
@@ -42,9 +40,9 @@ import {
       icon: UploadIcon,
       items: [
         { href: "/video-upload", icon: UploadIcon, label: "Video Compressor" },
-        { href: "videobg-remover", icon: VideoOffIcon, label: "Video Background Remover" },
-        { href: "video-summarizer", icon: VideoIcon, label: "AI Video Summarization" },
-        { href: "enhancer", icon: ZoomInIcon, label: "Frame Enhancer" },
+        { href: "/videobg-remover", icon: VideoOffIcon, label: "Video Background Remover" },
+        { href: "/video-summarizer", icon: VideoIcon, label: "AI Video Summarization" },
+        { href: "/enhancer", icon: ZoomInIcon, label: "Frame Enhancer" },
       ],
     },
   ];
