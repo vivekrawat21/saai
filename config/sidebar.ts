@@ -43,7 +43,6 @@ import {
         { href: "/video-upload", icon: UploadIcon, label: "Video Compressor" },
         { href: "/videobg-remover", icon: VideoOffIcon, label: "Video Background Remover" },
         { href: "/ytvideo-summarizer", icon: VideoIcon, label: "YT Video Summarizer" },
-        { href: "/enhancer", icon: ZoomInIcon, label: "Frame Enhancer" },,
         { href: "/ytvideo-downloader", icon: HardDriveDownloadIcon, label: "YT Video Downloader" },
       ],
     },
