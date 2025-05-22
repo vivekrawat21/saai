@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "functions": {
+      "app/**": {
+        "includeFiles": "bin/yt-dlp",
+        "maxDuration": 80
+      }
+    }
+  }

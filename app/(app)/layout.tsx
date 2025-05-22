@@ -151,21 +151,23 @@ export default function AppLayout({ children }: { children: ReactNode }) {
 
                 {openSections.includes(section.label) && (
                   <div className="ml-8 space-y-1">
-                    {section.items.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        onClick={closeSidebar} // Close sidebar on click
-                        className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm ${
-                          pathname === item.href
-                            ? "text-primary bg-primary/10 border-l-2 border-primary"
-                            : "hover:bg-base-300/20"
-                        }`}
-                      >
-                        <item.icon className="w-4 h-4" />
-                        <span>{item.label}</span>
-                      </Link>
-                    ))}
+                    {section.items.map((item) =>
+                      item ? (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          onClick={closeSidebar} // Close sidebar on click
+                          className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm ${
+                            pathname === item.href
+                              ? "text-primary bg-primary/10 border-l-2 border-primary"
+                              : "hover:bg-base-300/20"
+                          }`}
+                        >
+                          <item.icon className="w-4 h-4" />
+                          <span>{item.label}</span>
+                        </Link>
+                      ) : null
+                    )}
                   </div>
                 )}
               </div>

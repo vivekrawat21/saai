@@ -9,6 +9,9 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+/bin/yt-dlp
+/bin/yt-dlp.exe
+
 
 # testing
 /coverage
